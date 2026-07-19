@@ -1,0 +1,208 @@
+[
+  {
+    "port": "443",
+    "network": "udp",
+    "outboundTag": "block",
+    "enabled": true,
+    "remarks": "阻断UDP 443"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "domain": [
+      "domain:yuchsh.top",
+      "full:clash.razord.top",
+      "full:yacd.haishan.me"
+    ],
+    "enabled": true,
+    "remarks": "自定义域名直连"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "domain": [
+      "geosite:private"
+    ],
+    "enabled": true,
+    "remarks": "局域网和私有域名直连"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:private"
+    ],
+    "enabled": true,
+    "remarks": "局域网和私有IP直连"
+  },
+  {
+    "port": "",
+    "protocol": [
+      "bittorrent"
+    ],
+    "outboundTag": "direct",
+    "enabled": true,
+    "remarks": "BT流量直连"
+  },
+  {
+    "port": "",
+    "outboundTag": "block",
+    "domain": [
+      "geosite:category-ads-all"
+    ],
+    "enabled": true,
+    "remarks": "广告域名拦截"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "domain": [
+      "domain:steamcontent.com",
+      "domain:steamserver.net",
+      "domain:steamchina.com",
+      "geosite:steam@cn",
+      "geosite:category-games@cn"
+    ],
+    "enabled": true,
+    "remarks": "Steam下载和游戏国内CDN直连"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "domain": [
+      "geosite:github",
+      "domain:github.com",
+      "domain:github.io",
+      "domain:github.dev",
+      "domain:github.blog",
+      "domain:githubassets.com",
+      "domain:githubusercontent.com",
+      "domain:githubstatus.com",
+      "domain:ghcr.io",
+      "domain:githubcopilot.com",
+      "domain:github-cloud.s3.amazonaws.com",
+      "keyword:github-production-release-asset-"
+    ],
+    "enabled": true,
+    "remarks": "GitHub走代理"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "domain": [
+      "geosite:apple"
+    ],
+    "enabled": true,
+    "remarks": "Apple直连"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "domain": [
+      "geosite:onedrive",
+      "geosite:microsoft"
+    ],
+    "enabled": true,
+    "remarks": "Microsoft和OneDrive走代理"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "domain": [
+      "geosite:openai",
+      "domain:chatgpt.com",
+      "domain:openai.com",
+      "domain:oaistatic.com",
+      "domain:oaiusercontent.com",
+      "domain:anthropic.com",
+      "domain:claude.ai",
+      "domain:perplexity.ai",
+      "domain:poe.com",
+      "full:gemini.google.com"
+    ],
+    "enabled": true,
+    "remarks": "AI服务走代理"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "domain": [
+      "geosite:telegram"
+    ],
+    "enabled": true,
+    "remarks": "Telegram域名走代理"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "ip": [
+      "geoip:telegram"
+    ],
+    "enabled": true,
+    "remarks": "Telegram IP走代理"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "domain": [
+      "geosite:youtube",
+      "geosite:netflix",
+      "geosite:spotify",
+      "geosite:tiktok"
+    ],
+    "enabled": true,
+    "remarks": "流媒体服务走代理"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "domain": [
+      "geosite:google"
+    ],
+    "enabled": true,
+    "remarks": "Google走代理"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "domain": [
+      "geosite:steam"
+    ],
+    "enabled": true,
+    "remarks": "Steam商店和社区走代理"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "domain": [
+      "geosite:cn"
+    ],
+    "enabled": true,
+    "remarks": "中国大陆域名直连"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:cn"
+    ],
+    "enabled": true,
+    "remarks": "中国大陆IP直连"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "domain": [
+      "geosite:geolocation-!cn"
+    ],
+    "enabled": true,
+    "remarks": "非中国大陆域名走代理"
+  },
+  {
+    "port": "0-65535",
+    "network": "tcp,udp",
+    "outboundTag": "proxy",
+    "enabled": true,
+    "remarks": "最终兜底走代理"
+  }
+]

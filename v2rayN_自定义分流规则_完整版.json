@@ -1,61 +1,89 @@
 [
   {
-    "port": "443",
-    "network": "udp",
-    "outboundTag": "block",
-    "enabled": true,
-    "remarks": "阻断UDP 443"
-  },
-  {
-    "port": "",
-    "outboundTag": "direct",
     "domain": [
       "domain:yuchsh.top",
       "full:clash.razord.top",
       "full:yacd.haishan.me"
     ],
     "enabled": true,
+    "id": "6c259f18-4835-4ccd-82dd-13f7a8c604ad",
+    "locked": false,
+    "outboundTag": "direct",
     "remarks": "自定义域名直连"
   },
   {
-    "port": "",
-    "outboundTag": "direct",
+    "enabled": true,
+    "id": "c60a8701-7cd2-4a57-b50d-f57a732494cb",
+    "locked": false,
+    "network": "udp",
+    "outboundTag": "block",
+    "port": "443",
+    "remarks": "阻断其他流量的UDP 443"
+  },
+  {
     "domain": [
       "geosite:private"
     ],
     "enabled": true,
+    "id": "22a9a17c-683c-43b8-876d-60134c6f057c",
+    "locked": false,
+    "outboundTag": "direct",
     "remarks": "局域网和私有域名直连"
   },
   {
-    "port": "",
-    "outboundTag": "direct",
+    "enabled": true,
+    "id": "b2e768ef-fb6a-4c7a-bcd7-66fb1392a71f",
     "ip": [
       "geoip:private"
     ],
-    "enabled": true,
+    "locked": false,
+    "outboundTag": "direct",
     "remarks": "局域网和私有IP直连"
   },
   {
-    "port": "",
+    "enabled": true,
+    "id": "58cf8eac-f95e-4658-bf9b-35034a13a2a2",
+    "ip": [
+      "223.5.5.5"
+    ],
+    "locked": false,
+    "outboundTag": "direct",
+    "remarks": "当前使用的国内DNS直连"
+  },
+  {
+    "domain": [
+      "domain:alidns.com",
+      "domain:doh.pub",
+      "domain:dot.pub",
+      "domain:onedns.net"
+    ],
+    "enabled": true,
+    "id": "43fc779d-ed2b-4c36-bded-b2e7b745cbc3",
+    "locked": false,
+    "outboundTag": "direct",
+    "remarks": "常见国内DNS域名直连"
+  },
+  {
+    "enabled": true,
+    "id": "af68a662-f737-4ad1-bfce-1b48e5f19756",
+    "locked": false,
+    "outboundTag": "direct",
     "protocol": [
       "bittorrent"
     ],
-    "outboundTag": "direct",
-    "enabled": true,
-    "remarks": "BT流量直连"
+    "remarks": "可识别的BT流量直连"
   },
   {
-    "port": "",
-    "outboundTag": "block",
     "domain": [
       "geosite:category-ads-all"
     ],
     "enabled": true,
+    "id": "232520f6-e3b9-4d78-8620-25383c07ccc3",
+    "locked": false,
+    "outboundTag": "block",
     "remarks": "广告域名拦截"
   },
   {
-    "port": "",
-    "outboundTag": "direct",
     "domain": [
       "domain:steamcontent.com",
       "domain:steamserver.net",
@@ -64,11 +92,12 @@
       "geosite:category-games@cn"
     ],
     "enabled": true,
-    "remarks": "Steam下载和游戏国内CDN直连"
+    "id": "a12724b8-f679-4725-b4d2-b0275e035fe7",
+    "locked": false,
+    "outboundTag": "direct",
+    "remarks": "Steam内容服务及国内游戏域名直连"
   },
   {
-    "port": "",
-    "outboundTag": "proxy",
     "domain": [
       "geosite:github",
       "domain:github.com",
@@ -84,30 +113,33 @@
       "keyword:github-production-release-asset-"
     ],
     "enabled": true,
+    "id": "93407501-6192-4060-bfe8-b2d20b9ff6ba",
+    "locked": false,
+    "outboundTag": "proxy",
     "remarks": "GitHub走代理"
   },
   {
-    "port": "",
-    "outboundTag": "direct",
     "domain": [
       "geosite:apple"
     ],
     "enabled": true,
+    "id": "df1953cf-9152-47cf-b9ba-064054a76017",
+    "locked": false,
+    "outboundTag": "direct",
     "remarks": "Apple直连"
   },
   {
-    "port": "",
-    "outboundTag": "proxy",
     "domain": [
       "geosite:onedrive",
       "geosite:microsoft"
     ],
     "enabled": true,
+    "id": "2f165946-0628-46ea-aa43-2a77c98c22ec",
+    "locked": false,
+    "outboundTag": "proxy",
     "remarks": "Microsoft和OneDrive走代理"
   },
   {
-    "port": "",
-    "outboundTag": "proxy",
     "domain": [
       "geosite:openai",
       "domain:chatgpt.com",
@@ -121,29 +153,32 @@
       "full:gemini.google.com"
     ],
     "enabled": true,
+    "id": "9405de07-f2ff-48ba-aae4-e2dd2a9d55fe",
+    "locked": false,
+    "outboundTag": "proxy",
     "remarks": "AI服务走代理"
   },
   {
-    "port": "",
-    "outboundTag": "proxy",
     "domain": [
       "geosite:telegram"
     ],
     "enabled": true,
+    "id": "1e0313c2-d284-4b11-8e21-b0a3eb217730",
+    "locked": false,
+    "outboundTag": "proxy",
     "remarks": "Telegram域名走代理"
   },
   {
-    "port": "",
-    "outboundTag": "proxy",
+    "enabled": true,
+    "id": "82a9efac-dafc-4cb9-bcd9-af1f0cdc95f7",
     "ip": [
       "geoip:telegram"
     ],
-    "enabled": true,
+    "locked": false,
+    "outboundTag": "proxy",
     "remarks": "Telegram IP走代理"
   },
   {
-    "port": "",
-    "outboundTag": "proxy",
     "domain": [
       "geosite:youtube",
       "geosite:netflix",
@@ -151,58 +186,59 @@
       "geosite:tiktok"
     ],
     "enabled": true,
+    "id": "25e10bf3-24e9-4c71-88db-fa924dbc61e4",
+    "locked": false,
+    "outboundTag": "proxy",
     "remarks": "流媒体服务走代理"
   },
   {
-    "port": "",
-    "outboundTag": "proxy",
     "domain": [
       "geosite:google"
     ],
     "enabled": true,
+    "id": "92fc3338-e169-46ab-a086-1588e96bf86b",
+    "locked": false,
+    "outboundTag": "proxy",
     "remarks": "Google走代理"
   },
   {
-    "port": "",
-    "outboundTag": "proxy",
     "domain": [
       "geosite:steam"
     ],
     "enabled": true,
-    "remarks": "Steam商店和社区走代理"
+    "id": "f4383797-3c99-47f1-ba50-254cd58551d4",
+    "locked": false,
+    "outboundTag": "proxy",
+    "remarks": "其余Steam域名走代理"
   },
   {
-    "port": "",
-    "outboundTag": "direct",
     "domain": [
       "geosite:cn"
     ],
     "enabled": true,
+    "id": "fa3b5600-2c01-4110-9bd3-085ec4713599",
+    "locked": false,
+    "outboundTag": "direct",
     "remarks": "中国大陆域名直连"
   },
   {
-    "port": "",
-    "outboundTag": "direct",
+    "enabled": true,
+    "id": "45e39f14-b533-4f0d-a49f-270eb4726075",
     "ip": [
       "geoip:cn"
     ],
-    "enabled": true,
+    "locked": false,
+    "outboundTag": "direct",
     "remarks": "中国大陆IP直连"
   },
   {
-    "port": "",
-    "outboundTag": "proxy",
     "domain": [
       "geosite:geolocation-!cn"
     ],
     "enabled": true,
-    "remarks": "非中国大陆域名走代理"
-  },
-  {
-    "port": "0-65535",
-    "network": "tcp,udp",
+    "id": "8014c5bb-51db-4706-bc27-c94f28e708db",
+    "locked": false,
     "outboundTag": "proxy",
-    "enabled": true,
-    "remarks": "最终兜底走代理"
+    "remarks": "非中国大陆域名走代理"
   }
 ]

@@ -1,244 +1,171 @@
 [
   {
+    "enabled": true,
+    "id": "f34097a0-03e4-432b-8057-a7a72495ef7e",
+    "locked": false,
+    "outboundTag": "direct",
+    "remarks": "自定义域名直连",
     "domain": [
       "domain:yuchsh.top",
       "full:clash.razord.top",
       "full:yacd.haishan.me"
-    ],
+    ]
+  },
+  {
     "enabled": true,
-    "id": "6c259f18-4835-4ccd-82dd-13f7a8c604ad",
+    "id": "82b3886d-bf63-4988-85a0-b92a81aa869b",
     "locked": false,
     "outboundTag": "direct",
-    "remarks": "自定义域名直连"
-  },
-  {
-    "enabled": true,
-    "id": "c60a8701-7cd2-4a57-b50d-f57a732494cb",
-    "locked": false,
-    "network": "udp",
-    "outboundTag": "block",
-    "port": "443",
-    "remarks": "阻断其他流量的UDP 443"
-  },
-  {
+    "remarks": "私有网络直连",
     "domain": [
       "geosite:private"
-    ],
-    "enabled": true,
-    "id": "22a9a17c-683c-43b8-876d-60134c6f057c",
-    "locked": false,
-    "outboundTag": "direct",
-    "remarks": "局域网和私有域名直连"
+    ]
   },
   {
     "enabled": true,
-    "id": "b2e768ef-fb6a-4c7a-bcd7-66fb1392a71f",
+    "id": "a42c1079-02f8-4460-af9a-cc0de54976d9",
+    "locked": false,
+    "outboundTag": "direct",
+    "remarks": "私有IP直连",
     "ip": [
       "geoip:private"
-    ],
-    "locked": false,
-    "outboundTag": "direct",
-    "remarks": "局域网和私有IP直连"
+    ]
   },
   {
     "enabled": true,
-    "id": "58cf8eac-f95e-4658-bf9b-35034a13a2a2",
-    "ip": [
-      "223.5.5.5"
-    ],
-    "locked": false,
-    "outboundTag": "direct",
-    "remarks": "当前使用的国内DNS直连"
-  },
-  {
-    "domain": [
-      "domain:alidns.com",
-      "domain:doh.pub",
-      "domain:dot.pub",
-      "domain:onedns.net"
-    ],
-    "enabled": true,
-    "id": "43fc779d-ed2b-4c36-bded-b2e7b745cbc3",
-    "locked": false,
-    "outboundTag": "direct",
-    "remarks": "常见国内DNS域名直连"
-  },
-  {
-    "enabled": true,
-    "id": "af68a662-f737-4ad1-bfce-1b48e5f19756",
+    "id": "7c96fdb9-fd8d-4270-a232-6b2a552b98a6",
     "locked": false,
     "outboundTag": "direct",
     "protocol": [
       "bittorrent"
     ],
-    "remarks": "可识别的BT流量直连"
+    "remarks": "BT流量直连"
   },
   {
-    "domain": [
-      "geosite:category-ads-all"
-    ],
     "enabled": true,
-    "id": "232520f6-e3b9-4d78-8620-25383c07ccc3",
+    "id": "c96c74ce-e52b-4e6f-b36a-b65f23025fa1",
     "locked": false,
-    "outboundTag": "block",
-    "remarks": "广告域名拦截"
-  },
-  {
+    "outboundTag": "direct",
+    "remarks": "国内直连（含Steam下载）",
     "domain": [
+      "geosite:geolocation-cn",
+      "geosite:category-games@cn",
+      "geosite:synology",
       "domain:steamcontent.com",
       "domain:steamserver.net",
-      "domain:steamchina.com",
-      "geosite:steam@cn",
-      "geosite:category-games@cn"
-    ],
+      "geosite:apple@cn",
+      "geosite:microsoft@cn",
+      "full:fsend.cn",
+      "full:international-gfe.download.nvidia.com",
+      "domain:ctaiot.com"
+    ]
+  },
+  {
     "enabled": true,
-    "id": "a12724b8-f679-4725-b4d2-b0275e035fe7",
+    "id": "f57bd9d8-1f2b-4521-8d39-93a54c9692a5",
     "locked": false,
     "outboundTag": "direct",
-    "remarks": "Steam内容服务及国内游戏域名直连"
-  },
-  {
-    "domain": [
-      "geosite:github",
-      "domain:github.com",
-      "domain:github.io",
-      "domain:github.dev",
-      "domain:github.blog",
-      "domain:githubassets.com",
-      "domain:githubusercontent.com",
-      "domain:githubstatus.com",
-      "domain:ghcr.io",
-      "domain:githubcopilot.com",
-      "domain:github-cloud.s3.amazonaws.com",
-      "keyword:github-production-release-asset-"
-    ],
-    "enabled": true,
-    "id": "93407501-6192-4060-bfe8-b2d20b9ff6ba",
-    "locked": false,
-    "outboundTag": "proxy",
-    "remarks": "GitHub走代理"
-  },
-  {
-    "domain": [
-      "geosite:apple"
-    ],
-    "enabled": true,
-    "id": "df1953cf-9152-47cf-b9ba-064054a76017",
-    "locked": false,
-    "outboundTag": "direct",
-    "remarks": "Apple直连"
-  },
-  {
-    "domain": [
-      "geosite:onedrive",
-      "geosite:microsoft"
-    ],
-    "enabled": true,
-    "id": "2f165946-0628-46ea-aa43-2a77c98c22ec",
-    "locked": false,
-    "outboundTag": "proxy",
-    "remarks": "Microsoft和OneDrive走代理"
-  },
-  {
-    "domain": [
-      "geosite:openai",
-      "domain:chatgpt.com",
-      "domain:openai.com",
-      "domain:oaistatic.com",
-      "domain:oaiusercontent.com",
-      "domain:anthropic.com",
-      "domain:claude.ai",
-      "domain:perplexity.ai",
-      "domain:poe.com",
-      "full:gemini.google.com"
-    ],
-    "enabled": true,
-    "id": "9405de07-f2ff-48ba-aae4-e2dd2a9d55fe",
-    "locked": false,
-    "outboundTag": "proxy",
-    "remarks": "AI服务走代理"
-  },
-  {
-    "domain": [
-      "geosite:telegram"
-    ],
-    "enabled": true,
-    "id": "1e0313c2-d284-4b11-8e21-b0a3eb217730",
-    "locked": false,
-    "outboundTag": "proxy",
-    "remarks": "Telegram域名走代理"
-  },
-  {
-    "enabled": true,
-    "id": "82a9efac-dafc-4cb9-bcd9-af1f0cdc95f7",
-    "ip": [
-      "geoip:telegram"
-    ],
-    "locked": false,
-    "outboundTag": "proxy",
-    "remarks": "Telegram IP走代理"
-  },
-  {
-    "domain": [
-      "geosite:youtube",
-      "geosite:netflix",
-      "geosite:spotify",
-      "geosite:tiktok"
-    ],
-    "enabled": true,
-    "id": "25e10bf3-24e9-4c71-88db-fa924dbc61e4",
-    "locked": false,
-    "outboundTag": "proxy",
-    "remarks": "流媒体服务走代理"
-  },
-  {
-    "domain": [
-      "geosite:google"
-    ],
-    "enabled": true,
-    "id": "92fc3338-e169-46ab-a086-1588e96bf86b",
-    "locked": false,
-    "outboundTag": "proxy",
-    "remarks": "Google走代理"
-  },
-  {
-    "domain": [
-      "geosite:steam"
-    ],
-    "enabled": true,
-    "id": "f4383797-3c99-47f1-ba50-254cd58551d4",
-    "locked": false,
-    "outboundTag": "proxy",
-    "remarks": "其余Steam域名走代理"
-  },
-  {
-    "domain": [
-      "geosite:cn"
-    ],
-    "enabled": true,
-    "id": "fa3b5600-2c01-4110-9bd3-085ec4713599",
-    "locked": false,
-    "outboundTag": "direct",
-    "remarks": "中国大陆域名直连"
-  },
-  {
-    "enabled": true,
-    "id": "45e39f14-b533-4f0d-a49f-270eb4726075",
+    "remarks": "国内IP的QUIC放行",
+    "network": "udp",
+    "port": "443",
     "ip": [
       "geoip:cn"
-    ],
-    "locked": false,
-    "outboundTag": "direct",
-    "remarks": "中国大陆IP直连"
+    ]
   },
   {
-    "domain": [
-      "geosite:geolocation-!cn"
-    ],
     "enabled": true,
-    "id": "8014c5bb-51db-4706-bc27-c94f28e708db",
+    "id": "b3821cf1-da22-457e-a36a-1f8a1cde339d",
+    "locked": false,
+    "outboundTag": "block",
+    "remarks": "禁用国外QUIC",
+    "network": "udp",
+    "port": "443"
+  },
+  {
+    "enabled": true,
+    "id": "5866da9c-0fd7-42ea-870b-a6eb792b10db",
+    "locked": false,
+    "outboundTag": "block",
+    "remarks": "广告拦截",
+    "domain": [
+      "geosite:category-ads-all"
+    ]
+  },
+  {
+    "enabled": true,
+    "id": "51a142b6-dcce-42fb-8106-d4e82618bed9",
     "locked": false,
     "outboundTag": "proxy",
-    "remarks": "非中国大陆域名走代理"
+    "remarks": "Google",
+    "domain": [
+      "geosite:google"
+    ]
+  },
+  {
+    "enabled": true,
+    "id": "90af02b1-9539-4d22-a65c-fdb5181b75dc",
+    "locked": false,
+    "outboundTag": "proxy",
+    "remarks": "AI",
+    "domain": [
+      "geosite:category-ai-!cn",
+      "domain:claude.ai",
+      "domain:claude.com",
+      "domain:anthropic.com",
+      "full:cdn.usefathom.com",
+      "domain:intercom.io",
+      "domain:intercomcdn.com"
+    ]
+  },
+  {
+    "enabled": true,
+    "id": "babb531b-0912-4b6c-ad8d-d1cf7ba6d8a3",
+    "locked": false,
+    "outboundTag": "proxy",
+    "remarks": "Telegram",
+    "domain": [
+      "geosite:telegram"
+    ]
+  },
+  {
+    "enabled": true,
+    "id": "c29e8804-e5f1-42cc-bbb1-efb64315354f",
+    "locked": false,
+    "outboundTag": "proxy",
+    "remarks": "Steam",
+    "domain": [
+      "geosite:steam"
+    ]
+  },
+  {
+    "enabled": true,
+    "id": "5e1b67d5-d6d1-4445-b8f5-64c15c21b545",
+    "locked": false,
+    "outboundTag": "proxy",
+    "remarks": "国外域名代理",
+    "domain": [
+      "geosite:geolocation-!cn"
+    ]
+  },
+  {
+    "enabled": true,
+    "id": "8738fd89-0862-4984-b2e4-b61d1a53724b",
+    "locked": false,
+    "outboundTag": "proxy",
+    "remarks": "Google/Telegram IP",
+    "ip": [
+      "geoip:google",
+      "geoip:telegram"
+    ]
+  },
+  {
+    "enabled": true,
+    "id": "1e7f3723-b51c-41d0-ba74-f7ff51fe72f6",
+    "locked": false,
+    "outboundTag": "direct",
+    "remarks": "国内IP直连",
+    "ip": [
+      "geoip:cn"
+    ]
   }
 ]
